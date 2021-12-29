@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMovi - Projeto de Jamerson Viscentino</title>
+
+    <!--Link para colocar icone junto ao title-->
+	<link rel="shortcut icon" type="img/x-icon" href="./img/favicon.ico">
+
+	<!--Link do css-->
+	<link rel="stylesheet" type="text/css" href="./css/estilo2.css">
+
+    <!--Link do google fonts da fonte poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<!--Link para o arquivo JS que nos dá acesso aos ícones do site Font Awesome-->
+    <script src="https://kit.fontawesome.com/663909936f.js" crossorigin="anonymous" defer></script>
+
+    <!--Jquery-->
+    <script src="./js/jquery.js" defer></script>
+
+    <!--Manipulando o Jquery-->
+    <script src="./js/manipulando-jquery.js" defer></script>
+</head>
+
+<body>
+     <!--Criando o cabeçalho-->
+     <header id="barra-navegacao">
+        <div id="container-navegacao">
+            <img src="./img/imovi-icon.png" class="logo-imovi"/>
+            <h1>iMovi</h1>   
+            
+        </div>
+    </header>
+    <!--Criando barra de menu-->
+    <nav id="barra-menu">
+        <div id="link-navegar">
+            <!--Links de navegção-->
+            <a href="index.html">Home</a>
+            <a href="#">Projetos</a>
+            <a href="#">Imóveis</a>
+            <a href="#">Contato</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+
+    <!--Conteúdo Principal-->
+    <section id="conteudo-principal">
+
+        <input type="search" name="txtpesquisar" id="txt-pesquisar" placeholder="Pesquisar"/>
+
+        <i class="fas fa-search" id="icon-pesquisar"></i>
+
+        <!--<button id="btn-buscar">Buscar</button>-->
+
+        <div id="content">
+            <!--Criando o slideshow-->
+            <div class="slides">
+
+                <input type="radio" name="slide" id="slide1" checked/>
+                <input type="radio" name="slide" id="slide2"/>
+                <input type="radio" name="slide" id="slide3"/>
+
+                <div class="slide s1">
+                    <img src="./img/project-1.jpg"/>
+                </div>
+    
+                <div class="slide">
+                    <img src="./img/Projeto_1.jpg"/>
+                </div>
+            </div>
+
+            <div id="navegacao">
+                <label class="bar" for="slide1"></label>
+                <label class="bar" for="slide2"></label>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

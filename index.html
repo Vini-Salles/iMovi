@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMovi</title>
+
+    <!--Link para colocar icone junto ao title-->
+	<link rel="shortcut icon" type="img/x-icon" href="./img/favicon.ico">
+
+	<!--Link do css-->
+	<link rel="stylesheet" type="text/css" href="./css/estilo1.css">
+
+    <!--Link do google fonts da fonte poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<!--Link para o arquivo JS que nos dá acesso aos ícones do site Font Awesome-->
+    <script src="https://kit.fontawesome.com/663909936f.js" crossorigin="anonymous" defer></script>
+
+    <!--Jquery-->
+    <script src="./js/jquery.js" defer></script>
+
+    <!--Manipulando o Jquery-->
+    <script src="./js/manipulando-jquery.js" defer></script>
+</head>
+
+<body>
+     <!--Criando o cabeçalho-->
+     <header id="barra-navegacao">
+        <div id="container-navegacao">
+            <img src="./img/imovi-icon.png" class="logo-imovi"/>
+            <h1>iMovi</h1>   
+            
+        </div>
+    </header>
+    <!--Criando barra de menu-->
+    <nav id="barra-menu">
+        <div id="link-navegar">
+            <!--Links de navegção-->
+            <a href="index.html">Home</a>
+            <a href="#">Projetos</a>
+            <a href="#">Imóveis</a>
+            <a href="#">Contato</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+
+    <!--Conteúdo Principal-->
+    <section id="conteudo-principal">
+
+        <input type="search" name="txtpesquisar" id="txt-pesquisar" placeholder="Pesquisar"/>
+
+        <i class="fas fa-search" id="icon-pesquisar"></i>
+
+        <!--<button id="btn-buscar">Buscar</button>-->
+
+        <div id="content">
+            <!--Criando o slideshow-->
+            <div class="slides">
+
+                <input type="radio" name="slide" id="slide1" checked/>
+                <input type="radio" name="slide" id="slide2"/>
+                <input type="radio" name="slide" id="slide3"/>
+
+                <div class="slide s1">
+                    <img src="./img/banner-1.jpg"/>
+                </div>
+    
+                <div class="slide">
+                    <img src="./img/banner-2.jpg"/>
+                </div>
+    
+                <div class="slide">
+                    <img src="./img/banner-3.jpg"/>
+                </div>
+            </div>
+
+            <div id="navegacao">
+                <label class="bar" for="slide1"></label>
+                <label class="bar" for="slide2"></label>
+                <label class="bar" for="slide3"></label>
+            </div>
+        </div>
+
+        <!--Criando cards-->
+        <div class="cards">
+            <div id="card-1"><span>30 Days return</span></div>
+            <i class="fas fa-calendar-alt"></i>
+            <div id="card-2"><span>Free Shopping</span></div>
+            <i class="fas fa-shopping-bag"></i>
+            <div id="card-3"><span>Secure payments</span></div>
+            <i class="fas fa-lock"></i>
+            <div id="card-4"><span>New products</span></div>
+            <i class="fas fa-gift"></i>
+        </div>
+
+        <!--Criando divisão-->
+        <div class="divisao"></div>
+
+        <!--Criando legenda-->
+        <div class="legenda">
+            <span class="spn-1">Trabalhos em Destaque</span><br>
+            <span class="spn-2">Criações desafiadoras</span>
+        </div>
+
+        <div id="postagem">
+			<img class="img-postagem" src="./img/project-1.jpg">
+			<span class="postado">Criado por Jamerson Viscentino</span>
+		</div>
+
+        <div id="postagem2">
+			<img class="img-postagem2" src="./img/project-2.jpg">
+			<span class="postado2">Criado por Carol Peixoto</span>
+		</div>
+
+        <div id="postagem3">
+			<img class="img-postagem3" src="./img/project-3.jpg">
+			<span class="postado3">Criado por Vitor Muniz</span>
+		</div>
+
+        <div id="postagem4">
+			<img class="img-postagem4" src="./img/project-4.jpg">
+			<span class="postado4">Criado por Pedro Leal</span>
+		</div>
+
+        <div id="postagem5">
+			<img class="img-postagem5" src="./img/project-5.jpg">
+			<span class="postado5">Criado por Gustavo Borges</span>
+		</div>
+
+        <div id="postagem6">
+			<img class="img-postagem6" src="./img/project-6.jpg">
+			<span class="postado6">Criado por Celton Melo</span>
+		</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/*=====================================Limpar formatações padrão================================================*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+    width: 100%;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*===========================Colocando uma formatação padrão para a tag body==========================*/
+
+
+body {
+	font-size: 16px;
+	background: white;
+    font-family: "Poppins", arial, sans-serif;
+    overflow-x: hidden;
+
+	display: flex;
+	flex-direction: column;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*=======================================Formatando o cabeçalho - barra de navegação======================================*/
+
+#barra-navegacao {
+    background: white;
+	color: black;
+	padding: 0px;
+    border-bottom: 1px solid #d8d8d8;
+    width: 100%;
+    position: fixed;
+}
+
+#container-navegacao {
+    width: 1100px;
+    height: 90px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+h1 {
+    margin-left: 10px;
+}
+
+.logo-imovi {
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+}
+
+#txt-pesquisar {
+    border: 1px solid #535353;
+    width: 219px;
+    height: 29px;
+    border-radius: 33px;
+    position: absolute;
+    position: fixed;
+    bottom: 902px;
+    left: 74.5%;
+    outline-width: 0;
+    padding-left: 34px;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.fa-search {
+    color: #535353;
+    position: absolute;
+    position: fixed;
+    bottom: 902px;
+    left: 69.8%;
+    padding: 5px;
+    transform: translate(-50%);
+    display: flex;
+}
+
+/*#btn-buscar {
+    color: white;
+    background-color: #535353;
+    border: none;
+    border-radius: 3px;
+    height: 4px;
+    position: absolute;
+    position: fixed;
+    bottom: 904px;
+    left: 81.2%;
+    padding: 0.5rem 0.9rem;
+    transform: translate(-50%);
+    display: block;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}*/
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*========================================Formatando a barra de menu==========================================*/
+
+#barra-menu {
+    background: white;
+	color: black;
+	padding: 0px;
+    margin-top: 91px;
+    /*border-bottom: 1px solid #d8d8d8;*/
+    width: 100%;
+    position: fixed;
+}
+
+
+/*=================Formatando os links - menus===================*/
+
+#link-navegar {
+    width: 600px;
+    margin-left: 500px;
+    padding-left: 228px;
+}
+
+/*Removendo o underline dos links*/
+a {
+	text-decoration: none;
+	padding: 17px;
+}
+
+/*Formatando Links não visitados*/
+a:link {
+    color: #535353;
+}
+
+/*Formatando Links visitados*/
+a:visited {
+    color: #535353;
+}
+
+/*Formatando Links hover*/
+a:hover {
+    border-top: 2px solid #535353;
+}
+
+/*Formatando Links active*/
+a:active {
+    color: black;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*=======================================Formatando o conteudo principal======================================*/
+
+
+/*====================Formatando o slideshow==================*/
+
+#conteudo-principal {
+    flex: 1 0 auto;
+	width: 100vw;
+    height: 100vh;
+	margin: 55px auto 10px auto;
+}
+
+img {
+    width: 1160px;
+    object-fit: scale-down;
+}
+
+#content {
+    height: 700px;
+    width: 60%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 61px;
+    padding-bottom: 100px;
+    /*border-bottom: 2px solid #535353;*/
+}
+
+#navegacao {
+    position: absolute;
+    bottom: 202px;
+    left: 49.8%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 22px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
